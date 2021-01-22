@@ -11,14 +11,15 @@
   padding: 0;
 }
 
-h1 {
-  margin-top: 2rem;
-  font-family: 'Tangerine', cursive;
+.header {
+  margin-top: 0;
   display: block;
   background-color: pink;
+}
+.mainHeader {
+  font-family: 'Tangerine', cursive;
   text-align: center;
-  height: 15rem;
-  font-size: 13rem;
+  font-size: 10rem;
   font-weight: 900;
   text-align: center;
   background-image: url(img/light-gold-glitter-bg-2.gif);
@@ -28,20 +29,7 @@ h1 {
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke: 1px #be8e43;
 }
-
-.backgroundImage {
-  height: 100px;
-  position: relative;
-  background-image: url(img/title.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  background-color: pink;
-  display: block;
-}
 .subHeader {
-  display: block;
-  background-color: pink;
   text-align: center;
   font-family: 'Tangerine', cursive;
   font-size: 50px;
@@ -116,6 +104,12 @@ h1 {
   background-color: rgb(253, 239, 237);
 }
 @media only screen and (max-width: 500px) {
+  .mainHeader {
+    font-size: 6rem;
+  }
+  .subHeader {
+    font-size: 4rem;
+  }
   .mainContainer {
    height: 375px;
    padding-left: 1rem;
