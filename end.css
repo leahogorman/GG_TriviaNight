@@ -1,0 +1,60 @@
+.endGame {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+.innerHeader {
+    text-align: center;
+    background-image: url(img/light-gold-glitter-bg-2.gif);
+    background-size: 60rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    text-transform: uppercase; 
+    font-weight: 800; 
+    -webkit-font-smoothing: antialiased;
+    font-size: 8rem;
+}
+.endForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.3rem 1.4rem 0 rgba(228, 94, 157, 0.5);
+}
+input::placeholder{
+    color: rgba(228, 94, 157, 0.5);
+}
+.endBtn:disabled {
+    color: rgba(209, 101, 135, 0.25)
+}
+.endBtn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.8rem;
+    border: 0.1rem solid  rgba( 227, 138, 174, 0.25 );
+    color: rgba(209, 101, 135, 0.5);
+    background-color: pink;
+    border-radius: 10px;
+    padding: 10px;
+    height: 5rem;
+    width: 20rem;
+  }
+  @media only screen and (max-width: 500px) {
+    .endBtn {
+        height: 3rem;
+        padding: 0.5rem;
+    }
+   }

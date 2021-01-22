@@ -3,33 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
     <link rel="stylesheet" href="app.css">
-    <title>Congrats!</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="end.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div id="end" class="flex-center flex-column">
-            <h1 id="finalScore"></h1>
-            <form>
-                <input 
-                    type="text" 
-                    name="username" 
-                    id="username" 
-                    placeholder="username">
-                <button 
-                    type="submit" 
-                    class="btn" 
-                    id="saveScoreBtn" 
-                    onclick="saveHighScore(event)"
-                    disabled
-                >
-                        Save
-                </button>
-            </form>
-            <a class="btn" href="game.html">Play Again</a>
-            <a class="btn" href="/">Go Home</a>
+        <h1>The Golden Girls</h1>
+        <div class="subHeader">Trivia Night</div>
+        <div class="mainContainer">
+            <div id="end" class="endGame">
+                <div id="finalScore" class="innerHeader"></div>
+                <form class="endForm">
+                    <input 
+                        type="text" 
+                        name="username" 
+                        id="username" 
+                        placeholder="username">
+                    <button 
+                        type="submit" 
+                        class="endBtn" 
+                        id="saveScoreBtn" 
+                        onclick="saveHighScore(event)"
+                        disabled
+                    >
+                            Save
+                    </button>
+                </form>
+                <div class="endBtns">
+                    <a class="endBtn" id="playBtn" href="game.html">Play Again</a>
+                    <a class="endBtn" id="homeBtn" href="index.html">Go Home</a>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="end.js"></script>
+   <script src="end.js"></script>
 </body>
 </html>

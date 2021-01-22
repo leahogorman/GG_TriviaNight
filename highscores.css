@@ -1,22 +1,42 @@
 .highScores {
-    position: fixed;
+    width: 40rem;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
-
+.innerHeader {
+    text-align: center;
+    background-image: url(img/light-gold-glitter-bg-2.gif);
+    background-size: 60rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    text-transform: uppercase; 
+    font-weight: 800; 
+    -webkit-font-smoothing: antialiased;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
 #highScoresList {
-    background-color: hotpink;
     list-style: none;
     padding-left: 0;
     margin-bottom: 4rem;
 }
-
 .high-score {
-    font-size: 2.8rem;
+    font-weight: 700;
+    font-size: 3rem;
     margin-bottom: 0.5rem;
+    color: #99C68E;
 }
 
 .high-score:hover {
     transform: scale(1.025);
+    background-image: url(img/light-gold-glitter-bg-2.gif);
+    background-size: 60rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-weight: 800; 
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 1rem;
 }
