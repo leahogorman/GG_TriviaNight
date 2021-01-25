@@ -160,7 +160,6 @@ let questions = [
     ];
 
 const correctBonus = 10;
-const incorrectDeficit = -5;
 const totalQuestions =  11;
 
 startGame = () => {
@@ -174,7 +173,11 @@ getNewQuestion = () => {
 
     if(questionsLeft.length === 0 || questionCounter >= totalQuestions -1 ) {
         localStorage.setItem('mostRecentScore', score)
-        return window.location.assign('thankyou.html')
+        if(score == 100) {
+            return window.location.assign('thankyou.html')
+        }else {
+            return window.location.assign('end.html')
+        }
     }
     questionCounter++;
     // progressText.innerText = `${questionCounter} of ${totalQuestions - 1}`;
@@ -206,8 +209,6 @@ answers.forEach(answer => {
         
         if(classToApply === 'correct') {
             addScore(correctBonus);
-        } else {
-            minusScore(incorrectDeficit);
         }
 
         selectedChoice.classList.add(classToApply); 
@@ -222,9 +223,4 @@ addScore = num => {
     score +=num;
     scoreCount.innerText = "Score: " + score;
 }
-minusScore = num => {
-    score +=num;
-    scoreCount.innerText = "Score: " + score;
-}
-
 startGame()
